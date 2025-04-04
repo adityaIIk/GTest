@@ -18,7 +18,7 @@ TEST(StateMapperTest, FailedMappings) {
     // Invalid states
     EXPECT_EQ(StateMapper::mapToAppState(""), AppState::INVALID_STATE);
     EXPECT_EQ(StateMapper::mapToAppState("INVALID"), AppState::INVALID_STATE);
-    EXPECT_EQ(StateMapper::mapToAppState("SUCEED"), AppState::INVALID_STATE); // Old typo
+    EXPECT_EQ(StateMapper::mapToAppState("SUCEED"), AppState::INVALID_STATE);
     EXPECT_EQ(StateMapper::mapToAppState("123"), AppState::INVALID_STATE);
 }
 
